@@ -176,7 +176,7 @@ body {
     right: 10%;
     height: 70%;
     width: 40%;
-    background: url('images/hero-watch.png') center/contain no-repeat;
+    background: url('hero-watch.png') center/contain no-repeat;
     z-index: -1;
 }
 
