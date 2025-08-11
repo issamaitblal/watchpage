@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Navbar scroll effect
+
     const navbar = document.querySelector('.navbar');
     
     window.addEventListener('scroll', function() {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Color selector functionality
+    
     const colorOptions = document.querySelectorAll('.color-option');
     const productImages = document.querySelectorAll('.product-images img');
     
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
         option.addEventListener('click', function() {
             const color = this.getAttribute('data-color');
             
-            // Update active color option
+           
             colorOptions.forEach(opt => opt.classList.remove('active'));
             this.classList.add('active');
             
-            // Update product image
+            
             productImages.forEach(img => {
                 img.classList.remove('active');
                 if(img.getAttribute('data-color') === color) {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scrolling for anchor links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -42,11 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle
+  
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     
     mobileMenuBtn.addEventListener('click', function() {
         navLinks.classList.toggle('active');
     });
+
 });
